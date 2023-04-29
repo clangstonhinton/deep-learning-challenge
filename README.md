@@ -12,11 +12,12 @@ The purpose of this analysis was to build a neural network machine learning mode
  - The "target" variable for the model is the "IS_SUCCESSFUL" column indicating if the money was used effectively or not. A value of "0" indicates that the grant money was NOT used effectively. A "1" indicates that the grant money WAS used effectively. 
 
 ### Approach:
- 1. Data Preprocessing:  
-  - The EIN and NAME colums were removed from the input data as these data were not viewed as targets nor features.
-  - For APPLICATION_TYPE and CLASSIFICATION feature columns which have more than 10 unique values, a cutoff point to bin "rare" categorical variables into an "other" category was determine. APPLICATION_TYPE values were cutoff at 500 and CLASSIFICATION values were cut off at 300.
-   - The data were preprocessed and split into labels (the predicted target value of "IS_SUCCESSFUL") and features (remaining columns).
-   - The data were split into training and testing sets using scikit learn train_test_split function and scaled using StandardScaler.
+ 1. Data Preprocessing:
+    - The EIN and NAME colums were removed from the input data as these data were not viewed as targets nor features.
+    - For APPLICATION_TYPE and CLASSIFICATION feature columns which have more than 10 unique values, a cutoff point to bin "rare" categorical variables into an "other" category was determine. APPLICATION_TYPE values were cutoff at 500 and CLASSIFICATION values were cut off at 300.
+    - The data were split into labels (the predicted target value of "IS_SUCCESSFUL") and features (remaining columns).
+    - The data were split into training and testing sets using scikit learn train_test_split function and scaled using StandardScaler.
+
  2. Original Model Run:  Original Neural Network model was compiled, traned and evaluated for accuracy.
     - Hidden Layers = 2
     - Number of Nodes in Hidden Layers = 32 nodes each
