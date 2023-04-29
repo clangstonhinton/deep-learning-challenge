@@ -27,14 +27,13 @@ The purpose of this analysis was to build a neural network machine learning mode
     - Epochs = 30
     - Model Optimizer = adam
     
- 3. Optimizing the Model
- A tuner test was run to allow the kerastuner to select the following optimal hyperparameters:
+ 3. Optimizing the Model:
+ A tuner test was run to allow the kerastuner to select from the below hyperparameters and determine the most optimal model. Then the optimized model was run on the original dataset (same dataset as the Original Model) and the accuracy and loss metrics were calculated.
     - Number of Hidden Layers between 1 and 5
     - Number of Nodes in each hidden layer
     - Hidden Layer Activation Function between relu and tanh
     - Number of Epochs between 10, 20, 30, 40, 50, and 60
     - Model Optimzer between adam, adagrad, rmsprop, and sgd
- An optimized model was then run on the best model per the tune results and accuracy and loss metrics were calculated.
     
 
 ## Results
