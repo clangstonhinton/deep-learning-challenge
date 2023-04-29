@@ -4,7 +4,7 @@ Use neural network deep learning to predict non-profit applicants' success
 <img width="1200" alt="Screen Shot 2023-04-29 at 2 02 43 AM" src="https://user-images.githubusercontent.com/44728723/235286788-96767064-3118-48e0-b2d0-37e3ec74ef26.png">
 
 ## Overview of the Analysis
-The purpose of this analysis was to build a neural network machine learning model for the nonprofit foundation Alphabet Soup to help it select the applicants for funding with the best chance of success in their ventures. A binary classifer neural network model was built to predict whether applicants will be successful if funded by Alphabet Soup.
+The purpose of this analysis was to build a neural network machine learning model for the nonprofit foundation Alphabet Soup to help it select the applicants for funding with the best chance of success in their ventures. A binary classifer neural network model was built to predict whether applicants will be successful if funded by Alphabet Soup. A target accuracy of 75% was set for the classifer.
 
 ### Data Description:
  - The dataset contains information for more than 34,000 organizations that have received funding from Alphabet Soup over the years. The metadata contains 12 columns including: EIN, NAME, APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT, and IS_SUCCESSFUL.
@@ -26,11 +26,16 @@ The purpose of this analysis was to build a neural network machine learning mode
     - Batch Size = 32
     - Epochs = 30
     - Model Optimizer = adam
+    
  3. Optimizing the Model
-  - Were you able to achieve the target model performance?
-    - What steps did you take in your attempts to increase model performance?
-Using TensorFlow, the model was optimized to achieve a target predictive accuracy higher than 75%. 
-
+ A tuner test was run to allow the kerastuner to select the following optimal hyperparameters:
+    - Number of Hidden Layers between 1 and 5
+    - Number of Nodes in each hidden layer
+    - Hidden Layer Activation Function between relu and tanh
+    - Number of Epochs between 10, 20, 30, 40, 50, and 60
+    - Model Optimzer between adam, adagrad, rmsprop, and sgd
+ An optimized model was then run on the best model per the tune results and accuracy and loss metrics were calculated.
+    
 
 ## Results
 
