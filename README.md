@@ -16,16 +16,14 @@ The purpose of this analysis was to build a neural network machine learning mode
   - The data were preprocessed and split into labels (the predicted target value of "IS_SUCCESSFUL") and features (remaining columns).
   - The EIN and NAME colums were removed from the input data as these data were not viewed as targets nor features.
   - For APPLICATION_TYPE and CLASSIFICATION feature columns which have more than 10 unique values, a cutoff point to bin "rare" categorical variables into an "other" category was determine. APPLICATION_TYPE values were cutoff at 500 and CLASSIFICATION values were cut off at 300.
-
-
-# Choose a cutoff value and create a list of classifications to replace with 'Other'
-  - The data were split into training and testing sets using scikit learn train_test_split function.
+  - The data were split into training and testing sets using scikit learn train_test_split function and scaled using StandardScaler.
  2. Original Model Run:  Original Neural Network model was compiled, traned and evaluated for accuracy.
-    - # of neurons
-    - # of hidden layers
-    - activation functions
-    - # of epochs
-    - optimizer
+    - Hidden Layers = 2
+    - Number of Nodes in Hidden Layers = 32 nodes each
+    - Hidden Layer Activation Function = relu
+    - Batch Size = 32
+    - Epochs = 30
+    - Model Optimizer = adam
  3. Optimizing the Model
   - Were you able to achieve the target model performance?
     - What steps did you take in your attempts to increase model performance?
@@ -38,12 +36,12 @@ Below are the results of the two logistic regression models deployed in the anal
 
 ### 1. Original Model:  
 The Original Model had an accuracy of 0.727 with a loss of 0.555. The model was trained and evaluated on data that excluded the EIN and NAME columns. The model construct included: 
- - 2 hidden layers
- - 32 nodes in each hidden layer
- - Each hidden layer employed "relu" as the activation function
- - 32 batch size
- - 30 epochs
- - Employed "adam" as the model optimizer
+  - Hidden Layers = 2
+  - Number of Nodes in Hidden Layers = 32 nodes each
+  - Hidden Layer Activation Function = relu
+  - Batch Size = 32
+  - Epochs = 30
+  - Model Optimizer = adam
 
 <img width="450" alt="Screen Shot 2023-04-29 at 3 39 34 AM" src="https://user-images.githubusercontent.com/44728723/235290483-11894972-6088-4bc6-9097-7425f3dc4865.png">
 
