@@ -18,7 +18,8 @@ The purpose of this analysis was to build a neural network machine learning mode
     - The data were split into labels (the predicted target value of "IS_SUCCESSFUL") and features (remaining columns).
     - The data were split into training and testing sets using scikit learn train_test_split function and scaled using StandardScaler.
 
- 2. Original Model Run:  Original Neural Network model was compiled, traned and evaluated for accuracy.
+ 2. Original Model Run:  
+ An original Neural Network model was compiled, traned and evaluated for accuracy based on the followign parameters.
     - Hidden Layers = 2
     - Number of Nodes in Hidden Layers = 32 nodes each
     - Hidden Layer Activation Function = relu
@@ -33,8 +34,6 @@ Using TensorFlow, the model was optimized to achieve a target predictive accurac
 
 ## Results
 
-Below are the results of the two logistic regression models deployed in the analysis.
-
 ### 1. Original Model:  
 The Original Model had an accuracy of 0.727 with a loss of 0.555. The model was trained and evaluated on data that excluded the EIN and NAME columns. The model construct included: 
   - Hidden Layers = 2
@@ -47,14 +46,26 @@ The Original Model had an accuracy of 0.727 with a loss of 0.555. The model was 
 <img width="450" alt="Screen Shot 2023-04-29 at 3 39 34 AM" src="https://user-images.githubusercontent.com/44728723/235290483-11894972-6088-4bc6-9097-7425f3dc4865.png">
 
 ### 2. Model v2: 
-For the 2nd Model, the "NAME" column was added to the dataset as a feature to determine if the organization name could improve the model's accuracy. The "EIN" and "STATUS" colummns were removed. The second model was less accurate than the original model with an accuracy of 0.581 and a loss of 0.709. The model construct replicated that of the Original Model above to hold all other potential influencers constant.
+For Model v2, the "NAME" column was added to the dataset as a feature to determine if the organization name could improve the model's accuracy. The "EIN" and "STATUS" colummns were removed. Model v2 was less accurate than the original model with an accuracy of 0.581 and a loss of 0.709. The model construct replicated that of the Original Model above to hold all other potential influencers constant.
 
 <img width="450" alt="Screen Shot 2023-04-29 at 10 30 03 AM" src="https://user-images.githubusercontent.com/44728723/235308242-36ecdca3-3b44-46f4-9197-d2e220e49586.png">
 
+### 3. Optimized Model: 
+In the Optimized Model, the hyperparameters were optimized based on the results of the tuner testing. The Optimized Model performed similarly to the Original Model with an accuracy of 0.728 and a loss of 0.553. The model construct included: 
+  - Hidden Layers = 5
+  - Number of Nodes in Hidden Layers:
+    - Hidden Layer 1:  26 nodes
+    - Hidden Layer 2:  26 nodes
+    - Hidden Layer 3:  11 nodes
+    - Hidden Layer 4:  21 nodes
+    - Hidden Layer 5:  11 nodes
+  - Hidden Layer Activation Function = tanh
+  - Batch Size = 32
+  - Epochs = 20
+  - Model Optimizer = adam
 
-
-
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+### Summary:
+Overall the models failed to reach the target accuracy of 75%. A Random Forest classifier may be a better choice as it is a robust modeling approach and could provide increased accuarcy due to its sufficient number of estimators and tree depth. 
 
 
 
