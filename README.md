@@ -33,7 +33,7 @@ Using TensorFlow, the model was optimized to achieve a target predictive accurac
 Below are the results of the two logistic regression models deployed in the analysis.
 
 ### 1. Original Model:  Accuracy: 0.727  Model_Loss:  0.555
-<img width="638" alt="Screen Shot 2023-04-29 at 3 33 35 AM" src="https://user-images.githubusercontent.com/44728723/235290048-f86c3b55-d204-4993-a817-293f62fb2f91.png">
+<img width="300" alt="Screen Shot 2023-04-29 at 3 33 35 AM" src="https://user-images.githubusercontent.com/44728723/235290048-f86c3b55-d204-4993-a817-293f62fb2f91.png">
 
 
 Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
