@@ -39,7 +39,7 @@ The purpose of this analysis was to build a neural network machine learning mode
 ## Results
 
 ### 1. Original Model:  
-The Original Model had an accuracy of 0.727 with a loss of 0.555. The model was trained and evaluated on data that excluded the EIN and NAME columns. The model construct included: 
+The Original Model had an accuracy of 0.728 with a loss of 0.555. The model was trained and evaluated on data that excluded the EIN and NAME columns. The model construct included: 
   - Hidden Layers = 2
   - Number of Nodes in Hidden Layers = 32 nodes each
   - Hidden Layer Activation Function = relu
@@ -47,7 +47,8 @@ The Original Model had an accuracy of 0.727 with a loss of 0.555. The model was 
   - Epochs = 30
   - Model Optimizer = adam
 
-<img width="450" alt="Screen Shot 2023-04-29 at 3 39 34 AM" src="https://user-images.githubusercontent.com/44728723/235290483-11894972-6088-4bc6-9097-7425f3dc4865.png">
+<img width="450" alt="Screen Shot 2023-04-29 at 12 28 15 PM" src="https://user-images.githubusercontent.com/44728723/235313272-689316b2-ca14-46bd-ab89-e17fb5da8c45.png">
+
 
 ### 2. Model v2: 
 For Model v2, the "NAME" column was added to the dataset as a feature to determine if the organization name could improve the model's accuracy. The "EIN" and "STATUS" colummns were removed. Model v2 was less accurate than the original model with an accuracy of 0.581 and a loss of 0.709. The model construct replicated that of the Original Model above to hold all other potential influencers constant.
@@ -55,7 +56,7 @@ For Model v2, the "NAME" column was added to the dataset as a feature to determi
 <img width="450" alt="Screen Shot 2023-04-29 at 10 30 03 AM" src="https://user-images.githubusercontent.com/44728723/235308242-36ecdca3-3b44-46f4-9197-d2e220e49586.png">
 
 ### 3. Optimized Model: 
-In the Optimized Model, the hyperparameters were optimized based on the results of the tuner testing. The Optimized Model performed similarly to the Original Model with an accuracy of 0.729 and a loss of 0.553. The model construct included: 
+In the Optimized Model, the hyperparameters were optimized based on the results of the tuner testing. The Optimized Model performed similarly to the Original Model with an accuracy of 0.726 and a loss of 0.554. The model construct included: 
   - Hidden Layers = 5
   - Number of Nodes in Hidden Layers:
     - Hidden Layer 1:  26 nodes
@@ -68,7 +69,8 @@ In the Optimized Model, the hyperparameters were optimized based on the results 
   - Epochs = 20
   - Model Optimizer = adam
 
-<img width="450" alt="Screen Shot 2023-04-29 at 10 55 56 AM" src="https://user-images.githubusercontent.com/44728723/235312408-31cbf1a9-c59a-43ef-871c-ab0ee9c2a59f.png">
+<img width="450" alt="Screen Shot 2023-04-29 at 12 25 29 PM" src="https://user-images.githubusercontent.com/44728723/235313154-5c43a9b3-1841-4c86-a614-f103eda65f28.png">
+
 
 
 ### Summary:
