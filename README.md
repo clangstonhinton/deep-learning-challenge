@@ -55,7 +55,7 @@ For Model v2, the "NAME" column was added to the dataset as a feature to determi
 <img width="450" alt="Screen Shot 2023-04-29 at 10 30 03 AM" src="https://user-images.githubusercontent.com/44728723/235308242-36ecdca3-3b44-46f4-9197-d2e220e49586.png">
 
 ### 3. Optimized Model: 
-In the Optimized Model, the hyperparameters were optimized based on the results of the tuner testing. The Optimized Model performed similarly to the Original Model with an accuracy of 0.728 and a loss of 0.553. The model construct included: 
+In the Optimized Model, the hyperparameters were optimized based on the results of the tuner testing. The Optimized Model performed similarly to the Original Model with an accuracy of 0.729 and a loss of 0.553. The model construct included: 
   - Hidden Layers = 5
   - Number of Nodes in Hidden Layers:
     - Hidden Layer 1:  26 nodes
@@ -67,6 +67,9 @@ In the Optimized Model, the hyperparameters were optimized based on the results 
   - Batch Size = 32
   - Epochs = 20
   - Model Optimizer = adam
+
+<img width="450" alt="Screen Shot 2023-04-29 at 10 55 56 AM" src="https://user-images.githubusercontent.com/44728723/235312408-31cbf1a9-c59a-43ef-871c-ab0ee9c2a59f.png">
+
 
 ### Summary:
 Overall the models failed to reach the target accuracy of 75%. A Random Forest classifier may be a better choice as it is a robust modeling approach and could provide increased accuarcy due to its sufficient number of estimators and tree depth. 
