@@ -41,6 +41,10 @@ Step 3: Optimize the Model
 Using TensorFlow, the model was optimized to achieve a target predictive accuracy higher than 75%. 
 
 
-### Results Summary:
+## Results
+
+Below are the results of the two logistic regression models deployed in the analysis.
+
+### 1. Original Model
 
 Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
