@@ -4,43 +4,33 @@ Use neural network deep learning to predict non-profit applicants' success
 <img width="1200" alt="Screen Shot 2023-04-29 at 2 02 43 AM" src="https://user-images.githubusercontent.com/44728723/235286788-96767064-3118-48e0-b2d0-37e3ec74ef26.png">
 
 
-Background
+### Background
 
-The nonprofit foundation Alphabet Soup wants a tool that can help it select the applicants for funding with the best chance of success in their ventures. With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to create a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup.
+The nonprofit foundation Alphabet Soup has requested a neural network machine learning model to it select the applicants for funding with the best chance of success in their ventures. A binary classifer was built to predict whether applicants will be successful if funded by Alphabet Soup based on its historical data of more than 34,000 organizations that have received funding from Alphabet Soup over the years. 
 
-From Alphabet Soup’s business team, you have received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as:
+### Data Description
 
-EIN and NAME—Identification columns
+The data set contains 12 columns that capture metadata about each organization, such as:
+  - EIN and NAME: Identification columns
+  - APPLICATION_TYPE: Alphabet Soup application type
+  - AFFILIATION: Affiliated sector of industry
+  - CLASSIFICATION: Government organization classification
+  - USE_CASE: Use case for funding
+  - ORGANIZATION: Organization type
+  - STATUS: Active status
+  - INCOME_AMT: Income classification
+  - SPECIAL_CONSIDERATIONS: Special considerations for application
+  - ASK_AMT: Funding amount requested
+  - IS_SUCCESSFUL: Was the money used effectively
 
-APPLICATION_TYPE—Alphabet Soup application type
 
-AFFILIATION—Affiliated sector of industry
 
-CLASSIFICATION—Government organization classification
-
-USE_CASE—Use case for funding
-
-ORGANIZATION—Organization type
-
-STATUS—Active status
-
-INCOME_AMT—Income classification
-
-SPECIAL_CONSIDERATIONS—Special considerations for application
-
-ASK_AMT—Funding amount requested
-
-IS_SUCCESSFUL—Was the money used effectively
-
+### Approach:
 Step 1: Preprocess the Data
-
 Step 2: Compile, Train, and Evaluate the Model
-
-Using your knowledge of TensorFlow, you’ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup-funded organization will be successful based on the features in the dataset. You’ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once you’ve completed that step, you’ll compile, train, and evaluate your binary classification model to calculate the model’s loss and accuracy.
-
 Step 3: Optimize the Model
 
-Using your knowledge of TensorFlow, optimize your model to achieve a target predictive accuracy higher than 75%. Use any or all of the following methods to optimize your model:
+Using TensorFlow, the model was optimized to achieve a target predictive accuracy higher than 75%. 
 
 
 ### The report should contain the following:
