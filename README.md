@@ -32,9 +32,18 @@ Using TensorFlow, the model was optimized to achieve a target predictive accurac
 
 Below are the results of the two logistic regression models deployed in the analysis.
 
-### 1. Original Model:  Accuracy: 0.727  Model_Loss:  0.555
+### 1. Original Model:  
+The Original Model had an accuracy of 0.727 with a loss of 0.555. The model was trained and evaluated on data that excluded the EIN and NAME columns. The model construct included: 
+ - 2 hidden layers
+ - 32 nodes in each hidden layer
+ - Each hidden layer employed "relu" as the activation function
+ - 32 batch size
+ - 30 epochs
+ - Employed "adam" as the model optimizer
 
 <img width="450" alt="Screen Shot 2023-04-29 at 3 39 34 AM" src="https://user-images.githubusercontent.com/44728723/235290483-11894972-6088-4bc6-9097-7425f3dc4865.png">
 
+### 2. Second Model with Different Columns:  
+For the 2nd Model, the "NAME" column was added to the dataset as a feature because...XXXXX. The "EIN" and "STATUS" colummns were removed because ....XXXXX. The second model had an accuracy of XXXX with a loss of XXXX. The model construct replicates that of the Original Model above.
 
 Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
