@@ -13,8 +13,8 @@ The purpose of this analysis was to build a neural network machine learning mode
 
 ### Approach:
  1. Data Preprocessing:  
-   - The EIN and NAME colums were removed from the input data as these data were not viewed as targets nor features.
-   - For APPLICATION_TYPE and CLASSIFICATION feature columns which have more than 10 unique values, a cutoff point to bin "rare" categorical variables into an "other" category was determine. APPLICATION_TYPE values were cutoff at 500 and CLASSIFICATION values were cut off at 300.
+  - The EIN and NAME colums were removed from the input data as these data were not viewed as targets nor features.
+  - For APPLICATION_TYPE and CLASSIFICATION feature columns which have more than 10 unique values, a cutoff point to bin "rare" categorical variables into an "other" category was determine. APPLICATION_TYPE values were cutoff at 500 and CLASSIFICATION values were cut off at 300.
    - The data were preprocessed and split into labels (the predicted target value of "IS_SUCCESSFUL") and features (remaining columns).
    - The data were split into training and testing sets using scikit learn train_test_split function and scaled using StandardScaler.
  2. Original Model Run:  Original Neural Network model was compiled, traned and evaluated for accuracy.
